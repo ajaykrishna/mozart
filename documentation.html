@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Mozart / Documentation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mozart Web Page">
+  <meta name="author" content="Mozart Team">
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font-Awesome -->
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/verchor-template.css" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <div><span class="viewongithub"><a href="https://github.com/ajaykrishna/mozart" target="_blank">View on GitHub</a></span></div>
+  <!-- Fixed navbar -->
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <a class="navbar-brand" href="index.html">Mozart</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+          <li><a href="demo.html"><i class="fa fa-video-camera"></i> Demo</a></li>
+          <li class="active"><a href="https://github.com/ajaykrishna/mozart/blob/mozart/README.md"><i class="fa fa-archive"></i> Documentation</a></li>
+          <!--<li><a href="downloads.html"><i class="fa fa-arrow-circle-o-down"></i> Downloads</a></li> -->
+          <li><a href="about.html"><i class="fa fa-group"></i> About</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+
+    <h2>Installation</h2>
+    <p>Mozart is distributed as a Web Archive (WAR). The project uses <a href="https://maven.apache.org/">Apache Maven to generate WAR</a>.
+    The latest version of the WAR can be found <a href="https://ajaykrishna.github.io/mozart/downloads/mozart.war">here</a>.</p>
+    <p>In addition to the Mozart distribution (WAR), the following components are required for local installation: </p>
+      <ul>
+        <li>CADP toolbox <br />
+          <em>This is needed to perform formal analyses based on formal specification of the composition.</em><br />
+          <a href="http://cadp.inria.fr/" class="thin
+	  icon-download btn btn-primary" role="button">Acquire CADP license</a>
+        </li>
+        <br />
+    <li>IoT Recommendation Service <br />
+      <em>Used to get the initial device recommendation based on physical environment. 
+        It is a Bell Labs' solution. Mozart connects to the service using the REST APIs provided by the service.
+        More information about the platform can be found in the following paper</em><br />
+      <a href="https://ieeexplore.ieee.org/document/7899397" class="thin
+	  icon-download btn btn-primary" role="button">IoT Recommendation Assistant</a>
+    </li>
+      <br />
+    <li>Majord'Home SDN-based Platform <br />
+      <em>Bell Labs'platform for IoT deployments. Mozart connects to the platform using REST APIs. Composer uses APIs to create SD-LANs and enable communication interfaces. 
+        More information about the platform can be found in the following paper</em><br />
+      <a href="https://ieeexplore.ieee.org/document/7014207" class="thin
+	  icon-download btn btn-primary" role="button">Majord'Home Platform</a>
+    </li>
+      <br />
+      <li>
+        <em>Once you have the appropriate license, please proceed to add the service URLs in the code. 
+          In the <a href="https://github.com/ajaykrishna/mozart/blob/master/src/main/java/fr/inria/convecs/mozart/util/AppUtils.java">AppUtils</a> file update the Recommendation service and Majord'Home URLs</em>
+      </li>
+      </ul>
+
+
+    <h2>Browser Compatibility</h2>
+
+    <p>The web app has been tested on the following browsers</a>.
+    </p>
+    <ul>
+      <li> Mozilla Firefox Quantum 62.0 </li>
+      <li> Microsoft Edge 42.17134.1.0 </li>
+    </ul>
+    <hr>
+
+    <footer>
+      <p class="pull-right"><a href="https://github.com/ajaykrishna/mozart/blob/mozart/README.md#">Back to top</a></p>
+      <p>&copy; 2019 Mozart Team</a>
+      </p>
+    </footer>
+  </div>
+  <!-- /container -->
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
