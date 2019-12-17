@@ -3,7 +3,8 @@ body {
   padding-bottom: 20px;
 }
 
-#wordmark {
+moz-logo {
+    display: block;
     background-image: url('/resources/mozilla_iot_wordmark.svg');
     background-size: 161px, 32px;
     height: 32px;
